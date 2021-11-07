@@ -1,0 +1,85 @@
+.Header {
+    height: 96px;
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    @media screen and (min-width: 768px) {
+        margin-left: 39px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 55px;
+    }
+}
+
+.Logo {
+    height: 40px;
+    width: 40px;
+
+    @media screen and (min-width: 768px) {
+        height: 48px;
+        width: 48px;
+    }
+}
+
+.Nav {
+    display: none;
+    font-family: "Barlow Condensed", sans-serif;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color: white;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(10px);
+        width: 60%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 55%;
+    }
+
+    .NavLink {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0 1rem;
+        position: relative;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        b {
+            margin-right: 3px;
+            display: none;
+
+            @media screen and (min-width: 1200px) {
+                display: inline;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            background: #979797;
+            width: 0%;
+            transition: 0.3s;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+
+.ActiveLink {
+    &::after {
+        width: 100% !important;
+        background: white !important;
+    }
+}

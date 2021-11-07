@@ -1,0 +1,267 @@
+.Main {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: auto;
+    background: url("/assets/technology/background-technology-mobile.jpg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    @media screen and (min-width: 768px) {
+        background: url("/assets/technology/background-technology-tablet.jpg");
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        background: url("/assets/technology/background-technology-desktop.jpg");
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        padding-top: 40px;
+        overflow-x: hidden;
+    }
+}
+
+.container {
+    margin: 0;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 76px;
+        width: 92%;
+        margin-left: auto;
+        margin-bottom: 2rem;
+    }
+}
+
+.heading {
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+
+    b {
+        mix-blend-mode: normal;
+        opacity: 0.25;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+        text-align: left;
+        margin-left: 38.5px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.725px;
+    }
+}
+
+.Tabgroup {
+    margin-top: 2rem;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 3.75rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.landscapeImg {
+    width: 100%;
+    object-fit: contain;
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.tabs {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 3.5rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        mix-blend-mode: normal;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        transition: 0.5s;
+        cursor: pointer;
+
+        font-family: Bellefair;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 1px;
+
+        @media screen and (min-width: 768px) {
+            height: 60px;
+            width: 60px;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 1.5px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            height: 80px;
+            width: 80px;
+            font-size: 32px;
+            line-height: 37px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        &:hover {
+            border: 1px solid white;
+        }
+    }
+
+    .active {
+        background: #ffffff;
+        color: #0b0d17;
+        border: white;
+    }
+}
+
+.content {
+    margin: auto;
+    margin-top: 26px;
+    margin-bottom: 1rem;
+    width: 85%;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 44px;
+        max-width: 458px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 80px;
+    }
+}
+
+.contentHeading {
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: normal;
+    color: #d0d6f9;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        text-align: left;
+    }
+}
+
+.name {
+    font-family: Bellefair;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 9px;
+    white-space: nowrap;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 16px;
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 11px;
+        font-size: 56px;
+        line-height: 64px;
+        text-align: left;
+    }
+}
+
+.paragraph {
+    margin-top: 1rem;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #d0d6f9;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 11px;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: left;
+    }
+}
+
+.portraitImg {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: inline;
+        width: 515px;
+        height: 527px;
+        object-fit: contain;
+        margin-left: 5vw;
+    }
+}
